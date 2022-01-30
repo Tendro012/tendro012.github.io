@@ -73,3 +73,12 @@ body {
 }
 
 /* Help */
+
+#no-help {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  left: 500px;
+  top: 250px;
+   
+}
