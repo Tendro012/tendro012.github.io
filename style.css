@@ -83,10 +83,20 @@ body {
 
 /* Help */
 
-#no-help {
+/* make size of class "socialMedia" 10 px */
+.socialMedia {
+  background-color: #212121;
+  border: transparent;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  font-size: 50px;
-  color: white;
   left: 500px;
-  top: 250px;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+#insta {
+  top: 100px;
+  width: 10px;
+  height: 10px;
 }
