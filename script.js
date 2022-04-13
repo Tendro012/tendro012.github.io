@@ -5,7 +5,7 @@ const shop = document.getElementById('shop');
 const about = document.getElementById('about');
 const help = document.getElementById('help');
 const clicker = document.getElementById('clicker');
-
+const upgradeBtn = document.getElementById('upgrade');
 
 // variables
 
@@ -36,9 +36,24 @@ listener(help, 'help');
 
 
 clicker.addEventListener('click', () => {
-    // set variable count to the value of count + 1
-    count = count + 1;
+    count += upgrade.click;
     clicker.innerHTML = count;
-    console.log(count);
-
 });
+
+
+upgradeBtn.addEventListener('click', () => {
+    if (count >= upgrade.clickUpgradeCost) {
+        // set variable count to the value of count + 1
+        count = count - upgrade.clickUpgradeCost;
+        upgrade.clickUpgrade = upgrade.clickUpgrade + 1;
+        upgrade.clickUpgradeCost = upgrade.clickUpgradeCost * 2;
+        upgrade.clickUpgradeCost = upgrade.clickUpgradeCost * 2;
+        upgrade.clickUpgradeCost = upgrade.clickUpgradeCost * 2;
+        upgrade.clickUpgradeCost = upgrade.clickUpgradeCost * 2;
+        upgrade.clickUpgradeCost = upgrade.clickUpgradeCost * 2;
+        clicker.innerHTML = count;
+        upgradeBtn.innerHTML = `Upgrade (${upgrade.clickUpgradeCost})`;
+        console.log(count);
+    }
+}
+);

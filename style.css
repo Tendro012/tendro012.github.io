@@ -56,6 +56,15 @@ body {
   font-size: 100px;
   font-family: "Roboto", sans-serif;
 }
+
+#upgrade {
+  background-color: #212121;
+  position: absolute;
+  border: transparent;
+  left: 500px;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+}
 /* About */
 
 #about1 {
